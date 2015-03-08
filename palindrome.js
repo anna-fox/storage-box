@@ -4,7 +4,7 @@ isPalindrome('Do geese see God?'); // true
 isPalindrome('Бряк'); // false
 
 function isPalindrome(s) {
-    var reg = /[^a-zа-яё+]/gi;
+    var reg = /[^a-zа-яё+]/g;
     var str = s.toLowerCase().replace(reg, ''),
         revertedStr = str.split('').reverse().join('');
     console.log(str === revertedStr);

@@ -4,7 +4,7 @@ console.log(isPalindrome('Do geese see God?'));
 console.log(isPalindrome('Бряк'));
 
 function isPalindrome(s) {
-    var reg = /[a-zа-яё+]/gi;
+    var reg = /[a-zа-яё+]/g;
     var strArr = s.toLowerCase().match(reg),
         arrLen = strArr.length,
         comparisonSize = Math.floor(arrLen/2);
